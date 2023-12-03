@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jan Makovický - o mně</title>
+        <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="o-mne.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/nvlogo.png" alt="MD" class="logo">
+            <div class="menu-btn"></div>
+            <div class="nav">
+                <div class="nav-items">
+                    <a href="o-mne.html" class="active">O mně</a>
+                    <a href="projekty.html">Projekty</a>
+                    <a href="kontakty.html">Kontakty</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="about">
+            <div class="content">
+                <img src="img/about-me_mako.png" class="mako">
+                <div class="text">
+                    <h1>JAN MAKOVICKÝ</h1>
+                    <h5>SPŠT, ITA4</h5>
+                    <p>Je mi 19 let, již čtvrtým rokem se pravidelně pohybuji v oblasti
+                        multimédií, konkrétně se věnuji grafickému designu,
+                        točení a střihu videa, příležitostně také fotografování.
+                        Vše začalo rokem 2020 telefonátem trenéra florbalového klubu, 
+                        ve kterém jsem v té době ještě působil. Požádal mě, zda bych
+                        se nepokusil udělat upoutávací plakát pro nadcházející
+                        klubovou soutěž. V té době jsem s Photoshopem uměl pouze
+                        základní věci, ale řekl jsem si, že proč ne. Po pár hodinách
+                        zkoušení a shlédnutí pár tutoriálů na YouTube mě začala práce 
+                        opravdu bavit. Od té doby se snažím v oblasti grafiky stále
+                        více zdokonalovat a hledat si co nejvíce zakázek. Díky výdělkům
+                        z těchto zakázek jsem si postupem času mohl dovolit pořídit můj
+                        první foťák včetně dvou kvalitnějších objektivů, o něco později
+                        také stabilizátor pro pomoc ve tvorbě videí.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <script type="text/javascript">
+            //Javascript responzivního navbaru (hamburger)
+            const menuBtn = document.querySelector(".menu-btn");
+            const navigation = document.querySelector(".nav");
+    
+            menuBtn.addEventListener("click", () => {
+                menuBtn.classList.toggle("active");
+                navigation.classList.toggle("active");
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jan Makovický - Kontakty</title>
+        <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="kontakty.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/nvlogo.png" alt="MD" class="logo">
+            <div class="menu-btn"></div>
+            <div class="nav">
+                <div class="nav-items">
+                    <a href="o-mne.html">O mně</a>
+                    <a href="projekty.html">Projekty</a>
+                    <a href="kontakty.html" class="active">Kontakty</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="contact">
+            <div class="text">
+                <h1>Kontakty</h1>
+                <h4>Kde mě můžete najít?</h4>
+                <p>Kontaktovat mě lze na e-mailové adrese "makovickyj.04@spst.eu"
+                    či na sociálních sítích níže.
+                </p>
+            </div>
+        </section>
+        <section class="icons">
+            <p><a href="https://www.instagram.com/makodesign_/?hl=cs" class="icon one"><img src="img/socialMediaIcons_ig.png" width="70" height="70"></a></p>
+            <p><a href="https://www.youtube.com/channel/UC5_X-Wk23b04S3blgQPcBSw" class="icon two"><img src="img/socialMediaIcons_yt.png" width="70" height="70"></a></p>
+            <p><a href="https://www.facebook.com/jan.makovicky.52/" class="icon three"><img src="img/socialMediaIcons_fb.png" width="70" height="70"></a></p>
+        </section>
+
+        <script type="text/javascript">
+            //Javascript responzivního navbaru (hamburger)
+            const menuBtn = document.querySelector(".menu-btn");
+            const navigation = document.querySelector(".nav");
+    
+            menuBtn.addEventListener("click", () => {
+                menuBtn.classList.toggle("active");
+                navigation.classList.toggle("active");
+            })
+        </script>
+    </body>
+</html>

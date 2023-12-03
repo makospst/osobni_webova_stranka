@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jan Makovický - Projekty</title>
+        <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="jednotlive-projekty.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/nvlogo.png" alt="MD" class="logo">
+            <div class="menu-btn"></div>
+            <div class="nav">
+                <div class="nav-items">
+                    <a href="o-mne.html">O mně</a>
+                    <a href="projekty.html" class="active">Projekty</a>
+                    <a href="kontakty.html">Kontakty</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="main">
+            <div class="container">
+                <h1 class="text main-heading">Projekty</h1>
+                <div class="blocks-row">
+                    <a class="block" href="youtube.com">
+                        <h1 class="texth">Úkol 1</h1>
+                        <p class="textp">Tento úkol ještě není dokončen</p>
+                    </a>
+                    <a class="block" href="youtube.com">
+                        <h1 class="texth">Úkol 2</h1>
+                        <p class="textp">Tento úkol ještě není dokončen</p>
+                    </a>
+                    <a class="block" href="youtube.com">
+                        <h1 class="texth">Úkol 3</h1>
+                        <p class="textp">Tento úkol ještě není dokončen</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            //Javascript responzivního navbaru (hamburger)
+            const menuBtn = document.querySelector(".menu-btn");
+            const navigation = document.querySelector(".nav");
+    
+            menuBtn.addEventListener("click", () => {
+                menuBtn.classList.toggle("active");
+                navigation.classList.toggle("active");
+            })
+        </script>
+    </body>
+</html>
