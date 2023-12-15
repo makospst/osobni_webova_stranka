@@ -13,7 +13,8 @@ body{
     width: 100%;
     margin: 0;
     padding: 0;
-    background-image: url(img/gallery-projects.jpg);
+    background: rgb(25,0,36);
+    background: linear-gradient(90deg, rgba(25,0,36,1) 0%, rgba(92,9,121,1) 50%, rgba(41,0,71,1) 100%);
 }
 
 header{
@@ -79,57 +80,40 @@ header .nav .nav-items a:hover:before{
     transition: 0.4s;
 }
 
-.main {
-    padding-top: 150px;
-}
-
-.main-heading {
-    font-size: 60px;
-    text-align: center;
-    color: #fff;
-}
-
-.blocks-row {
-    width: calc(100% + 20px);
-    margin-left: -20px;
+.squares{
+    height: 100vh;
+    width: 100%;
+    margin: auto;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
+    align-items: center;
 }
 
-.block {
-    width: calc(20% - 20px);
-    margin-top: 20px;
-    margin-left: 20px;
-    background-image: url(img/gallery-box.jpg);
-    box-shadow: 0 0 3px #b0a0fa, 0 0 3px #ab00fa, 
-    0 0 3px #ab00fa;
-    height: 150px;
-    flex-shrink: 0;
-    padding: 25px;
-    border-radius: 20px;
-    box-sizing: border-box;
-    transition: 0.3s ease;
-}
-
-.block:hover{
-    filter: grayscale(0) brightness(1.25);
-    box-shadow: 0 0 8px #b0a0fa, 0 0 8px #ab00fa, 
-    0 0 8px #ab00fa;
-}
-
-.texth{
+.nadpis{
     color: #fff;
 }
 
-.textp{
-    color: #cecece;
+.square{
+    width: 225px;
+    height: 350px;
+    margin: 10px;
+    background: rgb(208,99,255);
+    background: linear-gradient(90deg, rgba(208,99,255,1) 0%, rgba(147,0,255,1) 100%);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease;   
 }
 
-.container {
-    width: 80%;
-    margin: auto;
+.square p{
+    padding: 10px;
+    padding-top: 10px;
+}
+
+.square:hover{
+    transform: scale(1.05);
+    filter: brightness(1.25);
 }
 
 @keyframes popUp{
@@ -141,6 +125,20 @@ header .nav .nav-items a:hover:before{
     }
     100%{
         transform: scale(1);
+    }
+}
+
+@media(max-width:900px){
+    .squares{
+        flex-direction: column;
+    }
+
+    .square{
+        width: 225px;
+        height: 200px;
+        margin: 10px;
+        font-size: 16px;
+        padding: 10px;  
     }
 }
 

@@ -89,43 +89,29 @@ header .nav .nav-items a:hover:before{
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column
 }
 
 .text{
-    width: 850px;
-    max-width: 100%;
-    padding: 0 10px;
-    display: block;
-    justify-content: center;
+    color: #fff;
 }
 
 .text h1{
-    color: #fff;
-    font-size: 100px;
-    margin-bottom: 5px;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
+    font-size: 75px;
 }
 
 .text h4{
-    color: #fff;
-    font-size: 25px;
-    margin-top: -10px;
+    font-size: 22px;
 }
 
 .text p{
-    color: #fff;
-    margin-top: 20px;
+    padding-top: 30px;
 }
 
 .icons{
-    width: 100%;
+    padding-top: 10px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 15px;
-    margin-top: -350px;
-    transition: 0.5s ease;
 }
 
 .icons:hover .icon{
