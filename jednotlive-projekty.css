@@ -10,11 +10,12 @@
 }
 
 body{
+    height: 100vh;
     width: 100%;
     margin: 0;
     padding: 0;
     background: rgb(25,0,36);
-    background: linear-gradient(90deg, rgba(25,0,36,1) 0%, rgba(92,9,121,1) 50%, rgba(41,0,71,1) 100%);
+    background: linear-gradient(90deg, rgba(25,0,36,1) 0%, rgb(80, 4, 131) 50%, rgba(41,0,71,1) 100%);
 }
 
 header{
@@ -80,38 +81,56 @@ header .nav .nav-items a:hover:before{
     transition: 0.4s;
 }
 
-.squares{
-    height: 100vh;
-    width: 100%;
-    margin: auto;
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.nadpis{
+.main {
+    padding-top: 150px;
+}
+
+.main-heading {
     color: #fff;
-}
-
-.square{
-    width: 225px;
-    height: 350px;
-    margin: 10px;
-    background: rgb(208,99,255);
-    background: linear-gradient(90deg, rgba(208,99,255,1) 0%, rgba(147,0,255,1) 100%);
-    font-size: 20px;
+    font-size: 60px;
     text-align: center;
-    padding: 10px;
+}
+
+.blocks-row {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.block {
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(116,0,187,1) 100%);
+    height: 200px;
+    flex-shrink: 0;
+    padding: 25px;
     border-radius: 10px;
-    transition: 0.3s ease;   
+    box-sizing: border-box;
+    transition: 0.3s ease;
 }
 
-.square p{
-    padding: 10px;
-    padding-top: 10px;
+.block h1{
+    color: #fff;
+    text-align: center;
 }
 
-.square:hover{
+.block p{
+    color: #d3d3d3;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.block:hover{
     transform: scale(1.05);
     filter: brightness(1.25);
 }
@@ -215,5 +234,41 @@ header .nav .nav-items a:hover:before{
     .gallery .item:nth-child(3n - 2){
         grid-column: unset;
         grid-row: unset;
+    }
+}
+
+@media(max-width:670px){
+    .main-heading {
+        font-size: 50px;
+    }
+}
+
+@media(max-width:470px){
+    .main-heading {
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+
+    .block{
+        margin-top: -20px;
+        transform: scale(0.8);
+    }
+}
+
+@media(max-width:400px){
+    .main-heading {
+        font-size: 38px;
+    }
+}
+
+@media(max-width:355px){
+    .main-heading {
+        font-size: 34px;
+    }
+}
+
+@media(max-width:315px){
+    .main-heading {
+        font-size: 30px;
     }
 }
