@@ -3,19 +3,23 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jan Makovický - o mně</title>
+        <title>MAKODESIGN.</title>
         <link rel="icon" href="img/favicon.ico">
         <link rel="stylesheet" href="o-mne.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <header>
-            <img src="img/nvlogo.png" alt="MD" class="logo">
+            <a href="uvod.html"><img src="img/nvlogo.png" alt="MD" class="logo"></a>
             <div class="menu-btn"></div>
             <div class="nav">
                 <div class="nav-items">
+                    <a href="uvod.html">Úvod</a>
                     <a href="o-mne.html" class="active">O mně</a>
-                    <a href="projekty.html">Projekty</a>
+                    <a href="galerie.html">Galerie</a>
+                    <a href="cenik-sluzeb.html">Ceník služeb</a>
                     <a href="kontakty.html">Kontakty</a>
+                    <a href="#">Rezervace</a>
                 </div>
             </div>
         </header>
@@ -24,8 +28,8 @@
             <div class="content">
                 <img src="img/about-me_mako.png" class="mako">
                 <div class="text">
-                    <h1>JAN MAKOVICKÝ</h1>
-                    <h5>SPŠT, ITA4</h5>
+                    <h1>MAKODESIGN.</h1>
+                    <h5>Jan Makovický</h5>
                     <p>Je mi 19 let, již čtvrtým rokem se pravidelně pohybuji v oblasti
                         multimédií, konkrétně se věnuji grafickému designu,
                         točení a střihu videa, příležitostně také fotografování.
@@ -45,6 +49,76 @@
             </div>
         </section>
 
+        <section class="skillsg">
+            <div class="grafika">
+                <div class="grafikatext">
+                    <h1>Grafika</h1>
+                    <p>
+                        Jak již bylo řečeno, grafikou to pro mě všechno začalo.
+                        Mezi mé nejčastější grafické výtvory se řadí například plakáty
+                        na různé sportovní či společenské akce, speciální výtvory na
+                        motivy sci-fi, tvorba log, návrh designu pro webové stránky,
+                        redesign starých šablon či také pouze obyčejná úprava nechtěných 
+                        kosmetických vad na lidech, autech apod. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skillsv">
+            <div class="videotvorba">
+                <div class="videotvorbatext">
+                    <h1>Videotvorba</h1>
+                    <p>
+                        Jak již bylo řečeno, grafikou to pro mě všechno začalo.
+                        Mezi mé nejčastější grafické výtvory se řadí například plakáty
+                        na různé sportovní či společenské akce, speciální výtvory na
+                        motivy sci-fi, tvorba log, návrh designu pro webové stránky,
+                        redesign starých šablon či také pouze obyčejná úprava nechtěných 
+                        kosmetických vad na lidech, autech apod. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skillsf">
+            <div class="fotografie">
+                <div class="fotografietext">
+                    <h1>Fotografie</h1>
+                    <p>
+                        Jak již bylo řečeno, grafikou to pro mě všechno začalo.
+                        Mezi mé nejčastější grafické výtvory se řadí například plakáty
+                        na různé sportovní či společenské akce, speciální výtvory na
+                        motivy sci-fi, tvorba log, návrh designu pro webové stránky,
+                        redesign starých šablon či také pouze obyčejná úprava nechtěných 
+                        kosmetických vad na lidech, autech apod. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footerContainer">
+                <div class="footerSocialMediaIcons">
+                    <a href="https://www.youtube.com/channel/UC5_X-Wk23b04S3blgQPcBSw"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/honza.mak/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/jan.makovicky.52/?locale=cs_CZ"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="footerBottom">
+                    <p>Copyright &copy;2023; MAKODESIGN.</p>
+                </div>
+                <div class="footerNavbar">
+                    <ul>
+                        <li><a href="uvod.html">Úvod</a></li>
+                        <li><a href="o-mne.html">O mně</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="cenik-sluzeb.html">Ceník služeb</a></li>
+                        <li><a href="kontakty.html">Kontakty</a></li>
+                        <li><a href="#">Rezervace</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
         <script type="text/javascript">
             //Javascript responzivního navbaru (hamburger)
@@ -55,6 +129,19 @@
                 menuBtn.classList.toggle("active");
                 navigation.classList.toggle("active");
             })
+
+            //Javascript transparentnosti navbaru po scrollnutí
+            document.addEventListener("DOMContentLoaded", function() {
+            var header = document.querySelector("header");
+
+            window.addEventListener("scroll", function() {
+                if (window.scrollY > 0) {
+                header.classList.add("scrolled");
+                } else {
+                header.classList.remove("scrolled");
+                }
+            });
+            });
         </script>
     </body>
 </html>
