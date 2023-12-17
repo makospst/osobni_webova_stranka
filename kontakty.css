@@ -124,6 +124,83 @@ header .nav .nav-items a:hover:before{
     transition: 0.3s ease;
 }
 
+footer{
+    background: url(img/footer_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 10px 30px 10px;
+}
+
+.footerSocialMediaIcons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -10px;
+}
+
+.footerSocialMediaIcons a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+.footerSocialMediaIcons a i{
+    font-size: 1.2em;
+    color: #110114;
+}
+
+.footerSocialMediaIcons a:hover{
+    background-color: #110114;
+    transition: 0.5s ease;
+}
+
+.footerSocialMediaIcons a:hover i{
+    color: white;
+}
+
+.footerNavbar{
+    margin-bottom: 5px;
+}
+
+.footerNavbar ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNavbar ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1em;
+    opacity: 0.7;
+    transition: 0.5s ease;
+}
+
+.footerNavbar ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    padding: 12px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.footerBottom p{
+    color: white;
+}
+
 @keyframes popUp{
     0%{
         transform: scale(1);
@@ -198,6 +275,18 @@ header .nav .nav-items a:hover:before{
         background-position: center;
         transition: 0.3s ease;
     }
+}
+
+@media (max-width:770px){
+    .footerNavbar ul{
+        flex-direction: column;
+    }
+
+    .footerNavbar ul li{
+        width: 100%;
+        text-align: center;
+        margin: 5px;
+    } 
 }
 
 @media (max-width: 625px){
