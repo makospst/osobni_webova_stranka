@@ -187,7 +187,7 @@ header .nav .nav-items a:hover:before{
 }
 
 .grafika{
-    width: 400px;
+    width: 500px;
     text-align: center;
     z-index: 2;
     position: relative;
@@ -199,7 +199,7 @@ header .nav .nav-items a:hover:before{
     color: #fff;
     font-size: 85px;
     margin-bottom: 5px;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
 }
 
 .grafikatext h1:hover{
@@ -212,7 +212,7 @@ header .nav .nav-items a:hover:before{
     line-height: 28px;
     letter-spacing: 1px;
     margin-bottom: 15px;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
 }
 
 .grafikatext p:hover{
@@ -247,7 +247,7 @@ header .nav .nav-items a:hover:before{
 }
 
 .videotvorba{
-    width: 400px;
+    width: 500px;
     text-align: center;
     z-index: 2;
     position: relative;
@@ -259,7 +259,7 @@ header .nav .nav-items a:hover:before{
     color: #fff;
     font-size: 85px;
     margin-bottom: 5px;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
 }
 
 .videotvorbatext h1:hover{
@@ -272,7 +272,7 @@ header .nav .nav-items a:hover:before{
     line-height: 28px;
     letter-spacing: 1px;
     margin-bottom: 15px;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
 }
 
 .videotvorbatext p:hover{
@@ -307,7 +307,7 @@ header .nav .nav-items a:hover:before{
 }
 
 .fotografie{
-    width: 400px;
+    width: 500px;
     text-align: center;
     z-index: 2;
     position: relative;
@@ -319,7 +319,7 @@ header .nav .nav-items a:hover:before{
     color: #fff;
     font-size: 85px;
     margin-bottom: 5px;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
 }
 
 .fotografietext h1:hover{
@@ -332,7 +332,7 @@ header .nav .nav-items a:hover:before{
     line-height: 28px;
     letter-spacing: 1px;
     margin-bottom: 15px;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
 }
 
 .fotografietext p:hover{
